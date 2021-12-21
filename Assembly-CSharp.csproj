@@ -52,17 +52,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
-     <Compile Include="Assets\Scripts\DataSO\CarData.cs" />
-     <Compile Include="Assets\Scripts\AdditionalProperty.cs" />
      <Compile Include="Assets\Scripts\Card.cs" />
-     <Compile Include="Assets\Scripts\DataBaseScreen.cs" />
-     <Compile Include="Assets\Scripts\Data.cs" />
      <Compile Include="Assets\Scripts\Application.cs" />
-     <Compile Include="Assets\Scripts\ScreenController.cs" />
-     <Compile Include="Assets\Scripts\MenuScreen.cs" />
-     <Compile Include="Assets\Scripts\IScreen.cs" />
      <Compile Include="Assets\Scripts\Editor.cs" />
+     <Compile Include="Assets\Scripts\IScreen.cs" />
+     <Compile Include="Assets\Scripts\Data.cs" />
+     <Compile Include="Assets\Scripts\ScreenController.cs" />
+     <Compile Include="Assets\Scripts\AdditionalProperty.cs" />
+     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
+     <Compile Include="Assets\Scripts\MenuScreen.cs" />
+     <Compile Include="Assets\Scripts\DataBaseScreen.cs" />
+     <Compile Include="Assets\Scripts\DataSO\CarData.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -643,31 +643,31 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Unity projects/CarDataBase/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Unity projects/CarDataBaseGit/CarDataBase/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

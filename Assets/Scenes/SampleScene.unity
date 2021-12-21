@@ -588,8 +588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cfacb62cee8db4c8afe7419d1e78e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuScreen: {fileID: 1332926179}
-  _dataScreen: {fileID: 381453514}
+  _menuScreen: {fileID: 1332926181}
+  _dataScreen: {fileID: 381453517}
 --- !u!4 &378555543
 Transform:
   m_ObjectHideFlags: 0

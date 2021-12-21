@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class ScreenController : DataBaseElement
 {
-    [SerializeField] private Canvas _menuScreen;
-    [SerializeField] private Canvas _dataScreen;
+    [SerializeField] private MenuScreen _menuScreen;
+    [SerializeField] private DataBaseScreen _dataScreen;
 
-    private List<Canvas> _allScreens;
+    private List<IScreen> _allScreens;
 
     public void Init()
     {
-        _allScreens = new List<Canvas>();
-        
-        _allScreens.Add(_menuScreen);
-        _allScreens.Add(_dataScreen);
-        
-        _dataScreen.GetComponent<DataBaseScreen>().CreateCards();
+        _allScreens = new List<IScreen>() {_menuScreen, _dataScreen};
+    
+        _dataScreen.Init();
         
         ShowMenu();
     }
@@ -24,20 +21,20 @@ public class ScreenController : DataBaseElement
     public void ShowMenu()
     {
         HideAllScreens();
-        _menuScreen.GetComponent<IScreen>().Show();
+        _menuScreen.Show();
     }
 
     public void ShowData()
     {
         HideAllScreens();
-        _dataScreen.GetComponent<IScreen>().Show();
+        _dataScreen.Show();
     }
 
     private void HideAllScreens()
     {
         foreach (var screen in _allScreens)
         {
-            screen.GetComponent<IScreen>().Hide();
+            screen.Hide();
         }
     }
 }

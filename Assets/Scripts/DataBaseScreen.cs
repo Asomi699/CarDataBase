@@ -23,6 +23,11 @@ public class DataBaseScreen : DataBaseElement, IScreen
         _editMenu.CardChanged -= OnUpdateCard;
     }
 
+    public void Init()
+    {
+        CreateCards();
+    }
+
     public void CreateCards()
     {
         CarData[] carDataBase = _app.Data.CarDataBase;
