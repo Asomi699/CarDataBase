@@ -9,22 +9,26 @@ public class Card : DataBaseElement
     [SerializeField] private TMP_Text _infoField;
     [SerializeField] private Image _picture;
 
-    private Editor _editor;
+    private CarBase _data;
     
     private string _info;
 
-    private CarData _data;
-    
     private string _uniqProperty;
 
+    private string _modelLabel = "Model ";
+    private string _massLabel = "Mass ";
+    private string _powerLabel = "Power ";
+    
+    private Editor _editor;
+    
     public int Id => _data.ID;
     
-    public void Init(CarData data, Editor editor)
+    public void Init(CarBase data, Editor editor)
     {
         _data = data;
         _editor = editor;
-        
-        _uniqProperty = new AdditionalProperty().GetParameterNameByType(data.UniqProperty);
+
+        _uniqProperty = new CarType().GetLabelByType(data);
         
         WriteGeneralData();
         WriteUniqData();
@@ -33,9 +37,9 @@ public class Card : DataBaseElement
     private void WriteGeneralData()
     {
         _picture.sprite = _data.Icon;
-        AddGeneralProperty(_data.ModelLabel + _data.Model);
-        AddGeneralProperty(_data.MassLabel + _data.Mass);
-        AddGeneralProperty(_data.PowerLabel + _data.Power);
+        AddGeneralProperty(_modelLabel + _data.Model);
+        AddGeneralProperty(_massLabel + _data.Mass);
+        AddGeneralProperty(_powerLabel + _data.Power);
     }
     
     private void AddGeneralProperty(string text)
@@ -46,7 +50,7 @@ public class Card : DataBaseElement
     
     private void WriteUniqData()
     {
-        string uniqValue = _data.UniqPropertyValue;
+        string uniqValue = _data.GetUniqValue();
         
         _info = _info + _uniqProperty + uniqValue;
         _infoField.text = _info;

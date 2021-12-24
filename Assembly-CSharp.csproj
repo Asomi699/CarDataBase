@@ -53,16 +53,20 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Card.cs" />
+     <Compile Include="Assets\Scripts\Car\SportCar.cs" />
      <Compile Include="Assets\Scripts\Application.cs" />
      <Compile Include="Assets\Scripts\Editor.cs" />
-     <Compile Include="Assets\Scripts\IScreen.cs" />
      <Compile Include="Assets\Scripts\Data.cs" />
      <Compile Include="Assets\Scripts\ScreenController.cs" />
-     <Compile Include="Assets\Scripts\AdditionalProperty.cs" />
+     <Compile Include="Assets\Scripts\Car\TruckCar.cs" />
+     <Compile Include="Assets\Scripts\CarType.cs" />
      <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
-     <Compile Include="Assets\Scripts\MenuScreen.cs" />
-     <Compile Include="Assets\Scripts\DataBaseScreen.cs" />
-     <Compile Include="Assets\Scripts\DataSO\CarData.cs" />
+     <Compile Include="Assets\Scripts\Screen\MenuScreen.cs" />
+     <Compile Include="Assets\Scripts\Car\CarBase.cs" />
+     <Compile Include="Assets\Scripts\Car\BusCar.cs" />
+     <Compile Include="Assets\Scripts\Car\DailyCar.cs" />
+     <Compile Include="Assets\Scripts\Screen\DataBaseScreen.cs" />
+     <Compile Include="Assets\Scripts\Screen\ScreenBase.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

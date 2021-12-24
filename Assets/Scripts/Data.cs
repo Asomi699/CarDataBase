@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class Data : DataBaseElement
 {
-    private CarData[] _base;
+    private CarBase[] _base;
 
-    public CarData[] CarDataBase => _base;
+    public CarBase[] CarDataBase => _base;
     
     public void Init()
     {
-        _base = new CarData[] {};
+        _base = new CarBase[] {};
         
         LoadDataFromResources();
         GenerateCardsIDs();
@@ -19,7 +19,7 @@ public class Data : DataBaseElement
     
     private void LoadDataFromResources()
     {
-        _base = Resources.LoadAll<CarData>("CarDataBase");
+        _base = Resources.LoadAll<CarBase>("CarDataBase");
     }
     
     private void GenerateCardsIDs()
@@ -30,7 +30,7 @@ public class Data : DataBaseElement
         }
     }
 
-    public ref CarData GetRefCardById(int idCard)
+    public ref CarBase GetRefCardById(int idCard)
     {
         for (int i = 0; i < _base.Length; i++)
         {

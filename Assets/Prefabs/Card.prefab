@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7651660604315864018}
   - component: {fileID: 9046960278178155690}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonEdit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,8 +34,8 @@ RectTransform:
   m_Father: {fileID: 6742070883245965974}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8016361, y: 0}
-  m_AnchorMax: {x: 1, y: 0.1964476}
+  m_AnchorMin: {x: 0.82800007, y: 0.7936573}
+  m_AnchorMax: {x: 0.98060036, y: 0.9748951}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.35
+  m_fontSize: 30.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

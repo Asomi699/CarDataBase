@@ -12,17 +12,23 @@
           </e>
         </e>
         <e p="scripts" t="Include">
-          <e p="AdditionalProperty.cs" t="Include" />
           <e p="Application.cs" t="Include" />
-          <e p="Card.cs" t="Include" />
-          <e p="Data.cs" t="Include" />
-          <e p="DataBaseScreen.cs" t="Include" />
-          <e p="DataSO" t="Include">
-            <e p="CarData.cs" t="Include" />
+          <e p="Car" t="Include">
+            <e p="BusCar.cs" t="Include" />
+            <e p="CarBase.cs" t="Include" />
+            <e p="DailyCar.cs" t="Include" />
+            <e p="SportCar.cs" t="Include" />
+            <e p="TruckCar.cs" t="Include" />
           </e>
+          <e p="Card.cs" t="Include" />
+          <e p="CarType.cs" t="Include" />
+          <e p="Data.cs" t="Include" />
           <e p="Editor.cs" t="Include" />
-          <e p="IScreen.cs" t="Include" />
-          <e p="MenuScreen.cs" t="Include" />
+          <e p="Screen" t="Include">
+            <e p="DataBaseScreen.cs" t="Include" />
+            <e p="MenuScreen.cs" t="Include" />
+            <e p="ScreenBase.cs" t="Include" />
+          </e>
           <e p="ScreenController.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

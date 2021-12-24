@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d002139d336df8a49a8809d00a19ec97, type: 3}
+  m_Script: {fileID: 11500000, guid: 00385fc4a974a1c48be2026f840a6a95, type: 3}
   m_Name: Transit
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 4df0cd7a1b76fc741b1df99646f52b9c, type: 3}
   _model: Transit
-  _mass: 2500
+  _mass: 2600
   _power: 180
-  uniqProperty: 2
-  uniqPropertyValue: 16
-  _id: 7
+  _numberSeats: 16

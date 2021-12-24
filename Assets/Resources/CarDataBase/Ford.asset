@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d002139d336df8a49a8809d00a19ec97, type: 3}
+  m_Script: {fileID: 11500000, guid: d67d0dd6509e89b47a84aa9cd190c561, type: 3}
   m_Name: Ford
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: f492c844d3ab9c4429f5c91a7f70d03f, type: 3}
   _model: Ford
   _mass: 1550
-  _power: 190
-  uniqProperty: 0
-  uniqPropertyValue: Orange
-  _id: 2
+  _power: 160
+  _color: Orange

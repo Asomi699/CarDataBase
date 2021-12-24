@@ -10,8 +10,8 @@ public class DataBaseElement : MonoBehaviour
 
 public class Application : MonoBehaviour
 {
-    [SerializeField] private ScreenController _screenController;
     [SerializeField] private Data _data;
+    [SerializeField] private ScreenController _screenController;
     
     public Data Data => _data;
 

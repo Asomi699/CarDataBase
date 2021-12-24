@@ -7,11 +7,11 @@ public class ScreenController : DataBaseElement
     [SerializeField] private MenuScreen _menuScreen;
     [SerializeField] private DataBaseScreen _dataScreen;
 
-    private List<IScreen> _allScreens;
+    private List<ScreenBase> _allScreens;
 
     public void Init()
     {
-        _allScreens = new List<IScreen>() {_menuScreen, _dataScreen};
+        _allScreens = new List<ScreenBase>() {_menuScreen, _dataScreen};
     
         _dataScreen.Init();
         

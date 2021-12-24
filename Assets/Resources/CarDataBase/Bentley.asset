@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d002139d336df8a49a8809d00a19ec97, type: 3}
+  m_Script: {fileID: 11500000, guid: a7f853ccba3e3664cb1d592e349825a1, type: 3}
   m_Name: Bentley
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 5f58cf79e21dbe2468e96e256f7ff8b4, type: 3}
   _model: Bentley
-  _mass: 1900
+  _mass: 1950
   _power: 550
-  uniqProperty: 3
-  uniqPropertyValue: 330
-  _id: 0
+  _speed: 320

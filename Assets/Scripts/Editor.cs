@@ -19,7 +19,7 @@ public class Editor : DataBaseElement
     [SerializeField] private TMP_Text _powerLabel;
     [SerializeField] private TMP_Text _uniqPropertyLabel;
 
-    private CarData _card;
+    private CarBase _card;
 
     public event UnityAction<int> CardChanged;
     
@@ -43,18 +43,18 @@ public class Editor : DataBaseElement
 
     private void FillFields()
     {
-        _modelLabel.text = _card.ModelLabel;
-        _massLabel.text = _card.MassLabel;
-        _powerLabel.text = _card.PowerLabel;
+        _modelLabel.text = "Model ";
+        _massLabel.text = "Mass ";
+        _powerLabel.text = "Power ";
         
         _model.text = _card.Model;
         _mass.text = _card.Mass;
         _power.text = _card.Power;
         
-        AdditionalProperty property = new AdditionalProperty();
+        CarType property = new CarType();
 
-        _uniqPropertyLabel.text = property.GetParameterNameByType(_card.UniqProperty);
-        _uniqProperty.text = _card.UniqPropertyValue;
+        _uniqPropertyLabel.text = property.GetLabelByType(_card);
+        _uniqProperty.text = _card.GetUniqValue();
     }
 
     public void SaveData()
@@ -72,7 +72,8 @@ public class Editor : DataBaseElement
         _card.Model = _model.text;
         _card.Mass = _mass.text;
         _card.Power = _power.text;
-        _card.UniqPropertyValue = _uniqProperty.text;
+        
+        _card.SetUniqValue( _uniqProperty.text); 
     }
 
     private void WriteNewDataToBase()
@@ -82,7 +83,7 @@ public class Editor : DataBaseElement
         card.Model = _model.text;
         card.Mass = _mass.text;
         card.Power = _power.text;
-        card.UniqPropertyValue = _uniqProperty.text;
+        card.SetUniqValue(_uniqProperty.text);
         
         card.Save();
     }

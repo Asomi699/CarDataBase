@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d002139d336df8a49a8809d00a19ec97, type: 3}
+  m_Script: {fileID: 11500000, guid: d67d0dd6509e89b47a84aa9cd190c561, type: 3}
   m_Name: Mazda
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 7554115573557c9478396c5f8a04748d, type: 3}
   _model: Mazda
-  _mass: 1460
-  _power: 160
-  uniqProperty: 0
-  uniqPropertyValue: Blue
-  _id: 4
+  _mass: 1430
+  _power: 125
+  _color: Blue
